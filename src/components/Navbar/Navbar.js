@@ -63,7 +63,7 @@ const Navbar = () => {
                   <Link to="/features">Recipes</Link>
                 </li>
                 <li>
-                  <Link to="/about">About Me</Link>
+                  <Link to="/aboutus">About Me</Link>
                 </li>
               </ul>
               <button className="btn">
