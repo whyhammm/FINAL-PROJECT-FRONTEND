@@ -5,10 +5,11 @@ import Spinner from "./components/Spinner/Spinner";
 import SignUp from "./components/SignUp/SignUp";
 import Recipe from "./components/Recipe/Recipe";
 import SignIn from "./components/SignIn/SignIn";
+import AboutUs from "./components/AboutUs/AboutUs"
 import Dashboard from "./components/Dashboard/Dashboard";
 import AddRecipe from "./components/AddRecipe/AddRecipe"
 import RecipeUpdate from "./components/RecipeUpdate/RecipeUpdate"
-// import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 const Homepage = lazy(() => import("./pages/Hero/Hero"));
 const Errorpage = lazy(() => import("./pages/Error/Error"));
 const Recipelist = lazy(() => import("./pages/Recipe/RecipeList"));
@@ -26,6 +27,8 @@ const App = () => {
           <Route exact path="/signin" component={SignIn} />
           <Route exact path="/recipe" component={Recipe} />
           <Route exact path="/dashboard" component={Dashboard} />
+          <Route exact path="/footer" component={Footer} />
+          <Route exact path="/aboutus" component={AboutUs} />
           <Route exact path="/addrecipe" component={AddRecipe} />
           <Route exact path="/users/:user_id/recipe/:id" component={Recipedetails} />
           <Route exact path="/updaterecipe/users/:user_id/recipe/:id" component={RecipeUpdate} />
