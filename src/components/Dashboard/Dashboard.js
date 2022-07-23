@@ -13,6 +13,7 @@ const UserRecipe = () => {
 
   useEffect(() => {
     getAllRecipeById();
+    // eslint-disable-next-line
   }, []);
 
   const getAllRecipeById = async () => {
